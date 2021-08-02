@@ -27,12 +27,10 @@ if __name__=='__main__':
     data_on_sphere = TR.dot(data_centered_regularized.T).T
 
     fig = plt.figure()
-    ax = fig.add_subplot(121, projection='3d')
+    ax = fig.add_subplot(111, projection='3d')
 
-    bx = fig.add_subplot(122, projection='3d')
-
-
-    bx.scatter(data[:, 0], data[:, 1], data[:, 2], marker='x', color='b')
+    #bx = fig.add_subplot(122, projection='3d')
+    #bx.scatter(data[:, 0], data[:, 1], data[:, 2], marker='x', color='b')
 
     ax.scatter(data_centered[:,0], data_centered[:,1], data_centered[:,2], marker='o', color='g')
     # ax.scatter(data_centered_regularized[:, 0], data_centered_regularized[:, 1],
